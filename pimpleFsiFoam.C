@@ -66,7 +66,7 @@ int main(int argc, char *argv[])
 
     while (runTime.run())
     {
-#       include "readPISOControls.H"
+#       include "readPIMPLEControls.H"
 #       include "readTimeControls.H"
 #       include "CourantNo.H"
 #       include "setDeltaT.H"
@@ -88,7 +88,7 @@ int main(int argc, char *argv[])
             << " s\n\n" << endl;
     }
 
-    //Info<< "End\n" << endl;
+    Info<< "End\n" << endl;
 
     return(0);
 }

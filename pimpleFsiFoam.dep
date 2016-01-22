@@ -704,7 +704,7 @@ pimpleFsiFoam.dep: readMechanicalProperties.H
 pimpleFsiFoam.dep: readCouplingProperties.H
 pimpleFsiFoam.dep: $(WM_PROJECT_DIR)/src/finiteVolume/lnInclude/readTimeControls.H
 pimpleFsiFoam.dep: $(WM_PROJECT_DIR)/src/finiteVolume/lnInclude/initContinuityErrs.H
-pimpleFsiFoam.dep: $(WM_PROJECT_DIR)/src/finiteVolume/lnInclude/readPISOControls.H
+pimpleFsiFoam.dep: $(WM_PROJECT_DIR)/src/finiteVolume/lnInclude/readPIMPLEControls.H
 pimpleFsiFoam.dep: $(WM_PROJECT_DIR)/src/finiteVolume/lnInclude/CourantNo.H
 pimpleFsiFoam.dep: $(WM_PROJECT_DIR)/src/finiteVolume/lnInclude/setDeltaT.H
 pimpleFsiFoam.dep: setPressure.H
