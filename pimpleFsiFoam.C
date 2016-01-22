@@ -22,7 +22,7 @@ License
     along with foam-extend.  If not, see <http://www.gnu.org/licenses/>.
 
 Application
-    icoFoam
+    pimpleFoam
 
 Description
     Transient solver for incompressible, laminar flow of Newtonian fluids with
@@ -66,11 +66,11 @@ int main(int argc, char *argv[])
 
     while (runTime.run())
     {
-#       include "readPIMPLEControls.H"
 #       include "readTimeControls.H"
+#       include "readPIMPLEControls.H"
 #       include "CourantNo.H"
 #       include "setDeltaT.H"
-
+      
         runTime++;
 
         Info<< "Time = " << runTime.timeName() << nl << endl;
