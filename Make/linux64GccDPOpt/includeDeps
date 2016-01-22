@@ -1,2 +1,2 @@
 include tractionDisplacement/tractionDisplacementFvPatchVectorField.dep
-include icoFsiFoam1.dep
+include pimpleFsiFoam.dep

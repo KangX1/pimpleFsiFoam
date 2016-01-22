@@ -1,6 +1,5 @@
 {
-/*    
-// SIMPLE loop
+    // SIMPLE loop
 
     for (int corr=0; corr<nCorr; corr++)
     {
@@ -39,26 +38,7 @@
                 phi -= pEqn.flux();
             }
         }
-*/
-// --- start of pimple loop
-	for (int oCorr = 0; oCorr < nOuterCorr; oCorr++)
-        {
-            if (nOuterCorr != 1)
-            {
-                p.storePrevIter();
-            }
 
-#           	include "UEqn.H"
-
-            // --- PISO loop
-            for (int corr = 0; corr < nCorr; corr++)
-            {
-#               include "pEqn.H"
-            }
-
-            turbulence->correct();
-        }
-// ----  end of pimple loop
         p.relax();
 
 #       include "movingMeshContinuityErrs.H"

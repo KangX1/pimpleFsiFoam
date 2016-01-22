@@ -50,6 +50,6 @@
 # 2 "<command-line>" 2
 # 1 "files"
 tractionDisplacement/tractionDisplacementFvPatchVectorField.C
-icoFsiFoam1.C
+pimpleFsiFoam.C
 
-EXE = $(FOAM_USER_APPBIN)/icoFsiFoam1
+EXE = $(FOAM_USER_APPBIN)/pimpleFsiFoam
