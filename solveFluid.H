@@ -9,9 +9,9 @@
             }
 
 #           	include "UEqn.H"
-     //U -=fvc::grad(p) * rUA;
 
-            // --- PISO loop
+
+            // --- PISO loopls
             for (int corr = 0; corr < nCorr; corr++)
             {
 #               include "pEqn.H"

@@ -81,6 +81,8 @@ int main(int argc, char *argv[])
 #       include "setMotion.H"
 #       include "solveFluid.H"
 
+// for the DyM part, input the setMotion in here, like a .H file 
+
         runTime.write();
 
         Info<< "ExecutionTime = "
