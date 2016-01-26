@@ -59,8 +59,29 @@
     scalar pRefValue = 0.0;
     setRefCell(p, mesh.solutionDict().subDict("PISO"), pRefCell, pRefValue);
 */
- 
-     Info<< "Reading field p\n" << endl;
+     IOdictionary transportProperties
+    (
+        IOobject
+        (
+            "transportProperties",
+            runTime.constant(),
+            mesh,
+            IOobject::MUST_READ,
+            IOobject::NO_WRITE
+        )
+    );
+
+    dimensionedScalar nu
+    (
+        transportProperties.lookup("nu")
+    );
+
+    dimensionedScalar rhoFluid
+    (
+        transportProperties.lookup("rho")
+    );
+    
+    Info<< "Reading field p\n" << endl;
     volScalarField p
     (
         IOobject

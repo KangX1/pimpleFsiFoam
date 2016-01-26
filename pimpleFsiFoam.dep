@@ -716,6 +716,7 @@ pimpleFsiFoam.dep: readStressedFoamControls.H
 pimpleFsiFoam.dep: setMotion.H
 pimpleFsiFoam.dep: $(WM_PROJECT_DIR)/src/finiteVolume/lnInclude/volContinuity.H
 pimpleFsiFoam.dep: solveFluid.H
+pimpleFsiFoam.dep: readControls.H
 pimpleFsiFoam.dep: $(WM_PROJECT_DIR)/src/finiteVolume/lnInclude/meshCourantNo.H
 pimpleFsiFoam.dep: correctPhi.H
 pimpleFsiFoam.dep: $(WM_PROJECT_DIR)/src/finiteVolume/lnInclude/continuityErrs.H

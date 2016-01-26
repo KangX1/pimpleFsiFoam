@@ -31,8 +31,9 @@
 */
 
 #       include "volContinuity.H"
-
-
+#       include "readControls.H"
+#       include "CourantNo.H"
+#       include "setDeltaT.H"
 
         if (checkMeshCourantNo)
         {
@@ -127,17 +128,5 @@
             turbulence->correct();
 	} while (++oCorr < nOuterCorr);
 }
-/*
-        runTime.write();
 
-        Info<< "ExecutionTime = " << runTime.elapsedCpuTime() << " s"
-            << "  ClockTime = " << runTime.elapsedClockTime() << " s"
-            << nl << endl;
-    }
 
-    Info<< "End\n" << endl;
-
-    //return 0;
-
-}
-*/

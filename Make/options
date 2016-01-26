@@ -14,13 +14,13 @@ EXE_LIBS = \
     -lfiniteVolume \
     -ldynamicFvMesh \
     -ldynamicMesh \
-    -ltetFiniteElement \
-    $(WM_DECOMP_LIBS) \
-    -llduSolvers\
+    -ltopoChangerFvMesh \
+    -lmeshTools \
     -lincompressibleTransportModels \
     -lincompressibleTurbulenceModel \
     -lincompressibleRASModels \
     -lincompressibleLESModels \
-    -lmeshTools \
-    -ltopoChangerFvMesh \
+    -llduSolvers\
+    -ltetFiniteElement \
+    $(WM_DECOMP_LIBS) \
     -L$(MESQUITE_LIB_DIR) -lmesquite
