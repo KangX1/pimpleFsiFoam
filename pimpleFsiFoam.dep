@@ -693,6 +693,9 @@ pimpleFsiFoam.dep: $(WM_PROJECT_DIR)/src/foam/lnInclude/coupledPointPatch.H
 pimpleFsiFoam.dep: $(WM_PROJECT_DIR)/src/foam/lnInclude/facePointPatch.H
 pimpleFsiFoam.dep: $(WM_PROJECT_DIR)/src/finiteVolume/lnInclude/volPointInterpolate.C
 pimpleFsiFoam.dep: $(WM_PROJECT_DIR)/src/foam/lnInclude/globalPointPatch.H
+pimpleFsiFoam.dep: $(WM_PROJECT_DIR)/src/transportModels/incompressible/singlePhaseTransportModel/singlePhaseTransportModel.H
+pimpleFsiFoam.dep: $(WM_PROJECT_DIR)/src/transportModels/incompressible/transportModel/transportModel.H
+pimpleFsiFoam.dep: $(WM_PROJECT_DIR)/src/turbulenceModels/incompressible/turbulenceModel/turbulenceModel.H
 pimpleFsiFoam.dep: $(WM_PROJECT_DIR)/src/foam/lnInclude/setRootCase.H
 pimpleFsiFoam.dep: $(WM_PROJECT_DIR)/src/foam/lnInclude/createTime.H
 pimpleFsiFoam.dep: $(WM_PROJECT_DIR)/src/dynamicMesh/dynamicFvMesh/lnInclude/createDynamicFvMesh.H
@@ -713,9 +716,10 @@ pimpleFsiFoam.dep: readStressedFoamControls.H
 pimpleFsiFoam.dep: setMotion.H
 pimpleFsiFoam.dep: $(WM_PROJECT_DIR)/src/finiteVolume/lnInclude/volContinuity.H
 pimpleFsiFoam.dep: solveFluid.H
-pimpleFsiFoam.dep: UEqn.H
-pimpleFsiFoam.dep: pEqn.H
+pimpleFsiFoam.dep: $(WM_PROJECT_DIR)/src/finiteVolume/lnInclude/meshCourantNo.H
+pimpleFsiFoam.dep: correctPhi.H
 pimpleFsiFoam.dep: $(WM_PROJECT_DIR)/src/finiteVolume/lnInclude/continuityErrs.H
+pimpleFsiFoam.dep: UEqn.H
 pimpleFsiFoam.dep: $(WM_PROJECT_DIR)/src/finiteVolume/lnInclude/movingMeshContinuityErrs.H
 $(OBJECTS_DIR)/pimpleFsiFoam.o: $(EXE_DEP)
 $(OBJECTS_DIR)/pimpleFsiFoam.o:

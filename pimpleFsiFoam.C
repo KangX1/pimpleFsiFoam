@@ -44,6 +44,10 @@ Description
 #include "pointFields.H"
 #include "volPointInterpolation.H"
 
+#include "singlePhaseTransportModel.H"
+#include "turbulenceModel.H"
+
+
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 int main(int argc, char *argv[])
