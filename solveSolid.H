@@ -7,6 +7,7 @@
     do
     {
         volTensorField gradU = fvc::grad(Usolid);
+	// Usolid is the displacement of solid 
 
         fvVectorMatrix UEqn
         (
