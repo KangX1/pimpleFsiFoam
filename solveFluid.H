@@ -35,6 +35,9 @@
 #       include "CourantNo.H"
 #       include "setDeltaT.H"
 
+	fvc::makeAbsolute(phi, U);
+	bool meshChanged = mesh.update();
+
         if (checkMeshCourantNo)
         {
 #           include "meshCourantNo.H"
